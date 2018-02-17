@@ -1,0 +1,36 @@
+.cab_menu_lista {
+
+}
+
+.cab_menu_lista * {
+    background-color: #20c997;
+    width: 200px;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.cab_menu_lista_grupo{
+    float: left;
+    margin: 0 5px;
+    border: 1px solid black;
+}
+.cab_menu_lista_grupo:hover > .cab_menu_lista_items {
+    display: block;
+}
+.cab_menu_lista_visible{
+
+}
+.cab_menu_lista_items{
+    display: none;
+}
+.cab_menu_lista_item{
+    float: left;
+    width: 100%;
+}
+.cab_menu_lista_item:hover{
+    background-color: black;
+    color: white;
+}
