@@ -1,10 +1,57 @@
-.cab_menu_lista {
+/* Estilos Generales **/
+#fondo_exterior{
+    width: 100%;
+    float: left;
+}
 
+#fondo_interior{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* Estilos de la Cabecera ************************************/
+#cabecera{
+    border: 1px solid gold;
+    float: left;
+    width: 100%;
+}
+#cab_logo_logo{
+    float: left;
+    width: 199px;
+    height: 50px;
+    background: url(../imgs/logo.png) no-repeat;
+    background-size: cover;
+}
+#cab_idioma{
+    float: right;
+}
+#cab_idioma_globo{
+    float: right;
+    width: 50px;
+    height: 50px;
+    background: url(../imgs/idiomas.png) no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+#cab_idioma_globo:hover{
+    background-position: bottom;
+}
+
+#cab_menu{
+    float: right;
+    border: 1px solid black;
+    height: 50px;
+    width: 800px
+}
+
+.cab_menu_lista {
+    position: absolute;
+    margin-top: 27px;
+    margin-left: 110px;
 }
 
 .cab_menu_lista * {
     background-color: #20c997;
-    width: 200px;
+    width: 160px;
     user-select: none;
     cursor: pointer;
     text-align: center;
@@ -16,6 +63,7 @@
     float: left;
     margin: 0 5px;
     border: 1px solid black;
+    border-radius: 5px;
 }
 .cab_menu_lista_grupo:hover > .cab_menu_lista_items {
     display: block;
@@ -25,6 +73,7 @@
 }
 .cab_menu_lista_items{
     display: none;
+    margin: 5px 0;
 }
 .cab_menu_lista_item{
     float: left;
@@ -34,3 +83,4 @@
     background-color: black;
     color: white;
 }
+/* Estilos del Cuerpo ************************************/
