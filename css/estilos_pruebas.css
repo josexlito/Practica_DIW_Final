@@ -1,19 +1,32 @@
-/* Estilos Generales **/
+/*************************************************************/
+/* Estilos Generales *****************************************/
+/*************************************************************/
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #d0d1e6;
+}
 #fondo_exterior{
     width: 100%;
     float: left;
 }
 
 #fondo_interior{
-    margin: 0 auto;
+    background-color: #b1b3c0;
+    margin: -10px auto;
     width: 1200px;
+    height: 500px;
 }
+/*************************************************************/
 /* Estilos de la Cabecera ************************************/
+/*************************************************************/
 #cabecera{
-    border: 1px solid gold;
     float: left;
     width: 100%;
+    padding: 10px;
 }
+/* LOGO ****************************************/
 #cab_logo_logo{
     float: left;
     width: 199px;
@@ -21,6 +34,7 @@
     background: url(../imgs/logo.png) no-repeat;
     background-size: cover;
 }
+/* IDIOMA ****************************************/
 #cab_idioma{
     float: right;
 }
@@ -35,23 +49,23 @@
 #cab_idioma_globo:hover{
     background-position: bottom;
 }
-
+/* MENU ****************************************/
 #cab_menu{
+    /*border: 1px solid black;*/
     float: right;
-    border: 1px solid black;
     height: 50px;
     width: 800px
 }
 
 .cab_menu_lista {
     position: absolute;
-    margin-top: 27px;
-    margin-left: 110px;
+    margin-top: 20px;
+    margin-left: 75px;
 }
 
 .cab_menu_lista * {
-    background-color: #20c997;
-    width: 160px;
+    background-color: #d0d1e6;
+    width: 170px;
     user-select: none;
     cursor: pointer;
     text-align: center;
@@ -60,27 +74,48 @@
 }
 
 .cab_menu_lista_grupo{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     float: left;
     margin: 0 5px;
-    border: 1px solid black;
-    border-radius: 5px;
 }
 .cab_menu_lista_grupo:hover > .cab_menu_lista_items {
     display: block;
 }
+.cab_menu_lista_grupo:hover > .cab_menu_lista_visible, .cab_menu_lista_grupo:hover > .cab_menu_lista_item {
+    background-color: #f064d7;
+}
 .cab_menu_lista_visible{
-
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    height: 40px;
+    line-height: 40px;
+}
+.cab_menu_lista_separado{
+    float: left;
+    height: 10px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 .cab_menu_lista_items{
     display: none;
-    margin: 5px 0;
 }
 .cab_menu_lista_item{
     float: left;
     width: 100%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 5px 0;
 }
 .cab_menu_lista_item:hover{
     background-color: black;
     color: white;
 }
-/* Estilos del Cuerpo ************************************/
+/*************************************************************/
+/* Estilos del Cuerpo ****************************************/
+/*************************************************************/
+#cuerpo{
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+}
