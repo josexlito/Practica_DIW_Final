@@ -14,7 +14,7 @@ body{
 
 #fondo_interior{
     margin: -10px auto;
-    width: 1200px;
+    width: 80%;
 }
 .f_left{
     float: left;
@@ -33,33 +33,22 @@ body{
     padding: 10px;
 }
 /* LOGO ****************************************/
+#cab_logo{
+    float: right;
+    width: 25%;
+}
 #cab_logo_logo{
     float: left;
-    width: 199px;
+    width: 195px;
     height: 50px;
     background: url(../imgs/logo.png) no-repeat;
     background-size: cover;
-}
-/* IDIOMA ****************************************/
-#cab_idioma{
-    float: right;
-}
-#cab_idioma_globo{
-    float: right;
-    width: 50px;
-    height: 50px;
-    background: url(../imgs/idiomas.png) no-repeat;
-    background-position: top;
-    background-size: cover;
-}
-#cab_idioma_globo:hover{
-    background-position: bottom;
 }
 /* MENU ****************************************/
 #cab_menu{
     float: right;
     height: 50px;
-    width: 800px
+    width: 75%;
 }
 
 .cab_menu_lista {
@@ -94,11 +83,13 @@ body{
 .cab_menu_lista_visible{
     border-left: 3px solid black;
     border-right: 3px solid black;
+    width: 100%;
     height: 40px;
     line-height: 40px;
 }
 .cab_menu_lista_separado{
     float: left;
+    width: 100%;
     height: 10px;
     border-left: 3px solid black;
     border-right: 3px solid black;
@@ -121,10 +112,19 @@ body{
 /* Estilos del Cuerpo ****************************************/
 /*************************************************************/
 #cuerpo{
-    /*border: 1px solid black;*/
     background-color: #778899;
     float: left;
     width: 100%;
+}
+#con_cabecera{
+    padding: 15px 15px 0;
+}
+#con_cabecera_img{
+    float: left;
+    width: 100%;
+    height: 400px;
+    background: url(https://dummyimage.com/1200x400/000/fff.jpg) no-repeat;
+    background-size: cover;
 }
 .con_articulo{
     float: left;
@@ -134,6 +134,38 @@ body{
     text-align: justify;
     padding: 0 15px;
 }
-.con_foto{
+.con_bloque{
     padding: 0 15px;
+}
+#bloque_informacion{
+    border: 1px solid black;
+    width: 600px;
+    height: 400px;
+}
+.con_form_col{
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+}
+#pie{
+    border-top: 1px solid black;
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+}
+#pie_titulo{
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+}
+#pie_titulo_logo{
+    float: left;
+    width: 199px;
+    height: 50px;
+    background: url(../imgs/logo.png) no-repeat;
+    background-size: cover;
+}
+#pie_titulo_texto{
+    font-family: Arial,sans-serif;
+    text-align: center;
 }
