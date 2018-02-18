@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #d0d1e6;
+    background-color: #708090;
 }
 #fondo_exterior{
     width: 100%;
@@ -13,15 +13,21 @@ body{
 }
 
 #fondo_interior{
-    background-color: #b1b3c0;
     margin: -10px auto;
     width: 1200px;
-    height: 500px;
+}
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
 }
 /*************************************************************/
 /* Estilos de la Cabecera ************************************/
 /*************************************************************/
 #cabecera{
+    background-color: #778899;
+    border-bottom: 1px solid black;
     float: left;
     width: 100%;
     padding: 10px;
@@ -51,7 +57,6 @@ body{
 }
 /* MENU ****************************************/
 #cab_menu{
-    /*border: 1px solid black;*/
     float: right;
     height: 50px;
     width: 800px
@@ -59,12 +64,12 @@ body{
 
 .cab_menu_lista {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 19px;
     margin-left: 75px;
 }
 
 .cab_menu_lista * {
-    background-color: #d0d1e6;
+    background-color: #C0C0C0;
     width: 170px;
     user-select: none;
     cursor: pointer;
@@ -83,7 +88,8 @@ body{
     display: block;
 }
 .cab_menu_lista_grupo:hover > .cab_menu_lista_visible, .cab_menu_lista_grupo:hover > .cab_menu_lista_item {
-    background-color: #f064d7;
+    background-color: #696969;
+    color: white;
 }
 .cab_menu_lista_visible{
     border-left: 3px solid black;
@@ -108,14 +114,26 @@ body{
     padding: 5px 0;
 }
 .cab_menu_lista_item:hover{
-    background-color: black;
+    background-color: #696969;
     color: white;
 }
 /*************************************************************/
 /* Estilos del Cuerpo ****************************************/
 /*************************************************************/
 #cuerpo{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    background-color: #778899;
     float: left;
     width: 100%;
+}
+.con_articulo{
+    float: left;
+    padding-top: 15px;
+}
+.con_art_texto{
+    text-align: justify;
+    padding: 0 15px;
+}
+.con_foto{
+    padding: 0 15px;
 }
