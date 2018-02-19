@@ -13,7 +13,6 @@ body{
     margin: -10px auto;
     width: 90%;
     max-width: 1480px;
-    min-width: 1120px;
 }
 .f_left{
     float: left;
@@ -116,14 +115,12 @@ body{
     width: 100%;
 }
 #con_cabecera{
+    position: inherit;
     padding: 15px 15px 0;
 }
 #con_cabecera_img{
     float: left;
     width: 100%;
-    /*height: 400px;
-    background: url(https://dummyimage.com/1200x400/000/fff.jpg) no-repeat;
-    background-size: cover;*/
 }
 .con_articulo{
     float: left;
@@ -133,8 +130,18 @@ body{
     text-align: justify;
     padding: 0 15px;
 }
-.con_bloque{
-    padding: 0 15px;
+.con_bloque {
+    padding: 0;
+    max-width: 700px;
+    max-height: 400px;
+}
+.con_bloque img{
+    width: 100%;
+    max-width: 700px;
+}
+.con_bloque iframe{
+    width: 100%;
+    height: 400px;
 }
 #bloque_informacion{
     border: 1px solid black;
