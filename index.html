@@ -6,76 +6,89 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="fondo_exterior">
     <div id="fondo_interior" class="container">
         <div id="cabecera">
-            <div id="cab_menu">
-                <div style="float: right; width: 869px">
-                    <div class="cab_menu_lista">
-                        <div class="cab_menu_lista_grupo">
-                            <div class="cab_menu_lista_visible">ESO</div>
-                            <div class="cab_menu_lista_items">
-                                <div class="cab_menu_lista_separado"></div>
-                                <div class="cab_menu_lista_item">Grupo 1</div>
-                                <div class="cab_menu_lista_item">Grupo 2</div>
-                                <div class="cab_menu_lista_item">Grupo 3</div>
-                                <div class="cab_menu_lista_item">Grupo 4</div>
-                                <div class="cab_menu_lista_separado"></div>
+            <nav class="navbar navbar-expand-md fondo_base_1 navbar-light">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <div id="cab_logo_logo"></div>
+                </a>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBar_ESO" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                ESO
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navBar_ESO">
+                                <a class="dropdown-item" href="#">Grupo 1</a>
+                                <a class="dropdown-item" href="#">Grupo 2</a>
+                                <a class="dropdown-item" href="#">Grupo 3</a>
+                                <a class="dropdown-item" href="#">Grupo 4</a>
                             </div>
-                        </div>
-                        <div class="cab_menu_lista_grupo">
-                            <div class="cab_menu_lista_visible">Bachillerato</div>
-                            <div class="cab_menu_lista_items">
-                                <div class="cab_menu_lista_separado"></div>
-                                <div class="cab_menu_lista_item">Grupo 1</div>
-                                <div class="cab_menu_lista_item">Grupo 2</div>
-                                <div class="cab_menu_lista_separado"></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBar_Bachillerato" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Bachillerato
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navBar_Bachillerato">
+                                <a class="dropdown-item" href="#">Grupo 1</a>
+                                <a class="dropdown-item" href="#">Grupo 2</a>
                             </div>
-                        </div>
-                        <div class="cab_menu_lista_grupo">
-                            <div class="cab_menu_lista_visible">Ciclos</div>
-                            <div class="cab_menu_lista_items">
-                                <div class="cab_menu_lista_separado"></div>
-                                <div class="cab_menu_lista_item">P.A. Grado Medio</div>
-                                <div class="cab_menu_lista_item">P.A. Grado Superior</div>
-                                <div class="cab_menu_lista_item">Administración</div>
-                                <div class="cab_menu_lista_item">Informática</div>
-                                <div class="cab_menu_lista_separado"></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBar_Ciclos" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Ciclos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navBar_Ciclos">
+                                <a class="dropdown-item" href="#">P.A. Grado Medio</a>
+                                <a class="dropdown-item" href="#">P.A. Grado Superior</a>
+                                <a class="dropdown-item" href="#">Administración</a>
+                                <a class="dropdown-item" href="#">Informática</a>
                             </div>
-                        </div>
-                        <div class="cab_menu_lista_grupo">
-                            <div class="cab_menu_lista_visible">Universidad</div>
-                            <div class="cab_menu_lista_items">
-                                <div class="cab_menu_lista_separado"></div>
-                                <div class="cab_menu_lista_item">Información</div>
-                                <div class="cab_menu_lista_separado"></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBar_Universidad" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Universidad
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navBar_Universidad">
+                                <a class="dropdown-item" href="#">Información</a>
                             </div>
-                        </div>
-                        <div class="cab_menu_lista_grupo" style="width: 65px;">
-                            <div class="cab_menu_lista_visible"
-                                 style="background: url(imgs/es_flag.jpg) no-repeat; background-size: cover"></div>
-                            <div class="cab_menu_lista_items" style="width: 65px;">
-                                <div class="cab_menu_lista_separado"></div>
-                                <div class="cab_menu_lista_item"
-                                     style="height: 39px; ;background: url(imgs/uk_flag.jpg) no-repeat; background-size: cover"></div>
-                                <div class="cab_menu_lista_separado"></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navBar_Idioma" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                <div id="cab_idioma_esp"></div>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navBar_Idioma">
+                                <a class="dropdown-item" href="#">
+                                    <div id="cab_idioma_eng"></div>
+                                </a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div id="cab_logo">
-                <div id="cab_logo_logo"></div>
-            </div>
+            </nav>
         </div>
         <div id="cuerpo">
             <div id="contenido">
                 <div class="row">
                     <div id="con_cabecera" class="col-12">
                         <img src="./imgs/clase1.jpg" alt="clase" id="con_cabecera_img">
-                        <!--div id="con_cabecera_img"></div-->
                     </div>
                 </div>
                 <div class="row">
@@ -95,7 +108,8 @@
                                     sobre qué es la calidad y la excelencia en la enseñanza.
                                 </p>
                                 <p>
-                                    Nos esforzamos por ofrecerle a nuestro alumnado no solo una buena formación académica y la competencia
+                                    Nos esforzamos por ofrecerle a nuestro alumnado no solo una buena formación
+                                    académica y la competencia
                                     en el uso de herramientas intelectuales, metodológicas y tecnológicas, sino también
                                     una sólida educación en valores comunitarios y democráticos, encaminándolos hacia la
                                     responsabilidad, la cooperación y el compromiso, abriéndole caminos para su
@@ -108,8 +122,8 @@
                         <div class="row">
                             <div id="bloque_video"
                                  class="con_bloque  col-sm-12  col-md-pull-12  col-xl-6  order-xl-2  embed-responsive  embed-responsive-16by9">
-                                <!--img src="https://dummyimage.com/700x400/000/fff.jpg" alt="img_700x400"-->
-                                <iframe class="embed-responsive-item" width="560" height="400" src="https://www.youtube.com/embed/h40pXhuyNRM?rel=0"
+                                <iframe class="embed-responsive-item" width="560" height="400"
+                                        src="https://www.youtube.com/embed/h40pXhuyNRM?rel=0"
                                         frameborder="0" allowfullscreen></iframe>
                             </div>
                             <div class="con_art_texto  col-sm-12  col-md-push-12  col-xl-6  order-xl-1">
@@ -136,8 +150,8 @@
                         <div class="row">
                             <div id="bloque_ubicacion"
                                  class="con_bloque  col-sm-12  col-md-push12  col-xl-6  embed-responsive  embed-responsive-16by9">
-                                <!--img src="https://dummyimage.com/700x400/000/fff.jpg" alt="img_700x400"-->
-                                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.0395729978973!2d-0.5118364587897729!3d38.33253251052704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d4bb29ec296006c!2sIES+Mare+Nostrum!5e0!3m2!1ses!2ses!4v1518961021199"
+                                <iframe class="embed-responsive-item"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.0395729978973!2d-0.5118364587897729!3d38.33253251052704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d4bb29ec296006c!2sIES+Mare+Nostrum!5e0!3m2!1ses!2ses!4v1518961021199"
                                         width="650px" height="300px" frameborder="0" style="border:0"
                                         allowfullscreen></iframe>
                             </div>

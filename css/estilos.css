@@ -23,12 +23,13 @@ body{
 /*************************************************************/
 /* Estilos de la Cabecera ************************************/
 /*************************************************************/
+.fondo_base_1{
+    background-color: #778899;
+}
 #cabecera{
     background-color: #778899;
-    border-bottom: 1px solid black;
     float: left;
     width: 100%;
-    padding: 10px;
 }
 /* LOGO ****************************************/
 #cab_logo{
@@ -42,6 +43,20 @@ body{
     background: url(../imgs/logo.png) no-repeat;
     background-size: cover;
 }
+#cab_idioma_esp{
+    float: left;
+    width: 30px;
+    height: 20px;
+    background: url(../imgs/es_flag.jpg) no-repeat;
+    background-size: cover;
+}
+#cab_idioma_eng{
+    float: left;
+    width: 30px;
+    height: 20px;
+    background: url(../imgs/uk_flag.jpg) no-repeat;
+    background-size: cover;
+}
 /* MENU ****************************************/
 #cab_menu{
     float: right;
@@ -52,7 +67,7 @@ body{
 .cab_menu_lista {
     position: absolute;
     margin-top: 19px;
-    margin-left: 75px;
+    margin-left: 80px;
 }
 
 .cab_menu_lista * {
@@ -71,6 +86,39 @@ body{
     float: left;
     margin: 0 5px;
 }
+.cab_menu_lista_menu{
+    width: 40px;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+.cab_menu_lista_hamburguesa{
+    display: none;
+    background: url(../imgs/menu.png) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 40px;
+}
+.cab_menu_lista_resto_menus{
+    float: right;
+    width: 869px;
+}
+@media screen and (max-width: 1180px){
+    .cab_menu_lista_hamburguesa, .cab_menu_lista_menu {
+        display: block;
+    }
+    .cab_menu_lista_resto_menus {
+        display: none;
+    }
+    .cab_menu_lista_menu:hover + .cab_menu_lista_resto_menus{
+        display: block;
+        margin-top: 41px;
+    }
+    .cab_menu_lista{
+        margin-top: -31px;
+    }
+}
+
 .cab_menu_lista_grupo:hover > .cab_menu_lista_items {
     display: block;
 }
@@ -153,7 +201,6 @@ body{
     padding: 10px 0;
 }
 #pie{
-    border-top: 1px solid black;
     float: left;
     width: 100%;
     padding: 15px 0;
