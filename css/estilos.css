@@ -10,7 +10,6 @@ body{
 }
 
 #fondo_interior{
-    margin: -10px auto;
     width: 90%;
     max-width: 1480px;
 }
@@ -58,6 +57,10 @@ body{
     background-size: cover;
 }
 /* MENU ****************************************/
+#nav-item-bandera{
+    width: 40px;
+    min-width: 80px;
+}
 #cab_menu{
     float: right;
     height: 50px;
@@ -164,7 +167,7 @@ body{
 }
 #con_cabecera{
     position: inherit;
-    padding: 15px 15px 0;
+    padding: 0 15px;
 }
 #con_cabecera_img{
     float: left;
